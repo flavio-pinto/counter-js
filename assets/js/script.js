@@ -1,3 +1,5 @@
+let currentCount = document.querySelector(".counter__number");
+
 document.querySelectorAll(".counter__button").forEach((btn) => {
   btn.addEventListener("click", () => {
     operationHandler(btn);
@@ -8,13 +10,13 @@ document.querySelectorAll(".counter__button").forEach((btn) => {
 function operationHandler(btn) {
   switch (btn.innerText) {
     case "+":
-      document.querySelector(".counter__number").innerText = parseInt(currentCount.innerText) + 1;
+      currentCount.innerText = parseInt(currentCount.innerText) + 1;
       break;
     case "-":
-      document.querySelector(".counter__number").innerText = parseInt(currentCount.innerText) - 1;
+      currentCount.innerText = parseInt(currentCount.innerText) - 1;
       break;
     case "Reset":
-      document.querySelector(".counter__number").innerText = 0;
+      currentCount.innerText = 0;
       break;
   }
 }
