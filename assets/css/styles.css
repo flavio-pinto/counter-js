@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  background-color: #101036;
+  border-radius: 16px;
+  box-shadow: 0 0 16px #00f, 0 0 32px #00f, 0 0 64px #00f;
+  max-width: 80%;
+}
+
+.counter__number {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 8px #00f, 0 0 16px #00f, 0 0 32px #00f;
+  margin-bottom: 32px;
+}
+
+.counter__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.counter__button {
+  font-size: 2rem;
+  margin: 8px;
+  padding: 24px 48px;
+  border: none;
+  border-radius: 16px;
+  background-color: #f0f;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 250ms ease-in-out;
+  text-shadow: 0 0 8px #00f, 0 0 16px #00f, 0 0 32px #00f;
+}
+
+.counter__button:hover {
+  background-color: #ff0;
+}
+
+.counter__button:active {
+  background-color: #0ff;
+}
+
+@media screen and (max-width: 768px) {
+  .counter {
+    max-width: 100%;
+  }
+
+  .counter__number {
+    font-size: 4rem;
+  }
+
+  .counter__button {
+    font-size: 1.5rem;
+    margin: 4px;
+    padding: 16px 32px;
+  }
+}
