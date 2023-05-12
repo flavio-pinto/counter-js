@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Quantico', sans-serif;
 }
 
 body {
@@ -58,6 +59,19 @@ body {
 .counter__button:active {
   background-color: #0ff;
 }
+
+.footer {
+  background-color: #101036;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 
 @media screen and (max-width: 768px) {
   .counter {
