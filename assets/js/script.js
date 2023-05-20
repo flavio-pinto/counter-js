@@ -65,9 +65,7 @@ function resetHandler() {
     setTimeout(() => {
       if (currentCount.innerText > 0) {
         currentCount.innerText--;
-      }
-
-      if (currentCount.innerText < 0) {
+      } else {
         currentCount.innerText++;
       }
     }, 30 * i);
